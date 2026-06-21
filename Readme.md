@@ -1,8 +1,32 @@
-# Programming Assignment: DES (Data Encryption Standard) Encryption & Decryption
+# Assignment: DES
 
 ## Course / Module
-Introduction to Programming — Cryptography Fundamentals
+ICT 4105 - Cryptography and Cyber Law by [Prof. Dr. Ziaur Rahman]([https://google.com](https://rahmanziaur.github.io/))
 
+Submit via Google Classroom using Java.
+
+---
+## Sample Input
+
+**Key (used for all 3 test cases):**
+- ASCII: `DESKEY12`
+- Hex: `4445534B45593132`
+
+| No. | Plaintext |
+|-----|-----------|
+| 1 | `HELLO123` |
+| 2 | `Computer Network Security` |
+| 3 | `DES Algorithm Test 2026!` |
+
+## Sample Output
+
+Your program's output should match the following exactly (mode = ECB, padding = PKCS7):
+
+| No. | Plaintext | Ciphertext (Hex) | Decrypted Text |
+|-----|-----------|-------------------|-----------------|
+| 1 | `HELLO123` | `A21A616C70AFAB9A6738237FA5B0F65E` | `HELLO123` |
+| 2 | `Computer Network Security` | `3A1C6C41ED0B0497890E7DFCA039FAFA1A288EA2E8A3248D78DC6B23174DC2BE` | `Computer Network Security` |
+| 3 | `DES Algorithm Test 2026!` | `F3BF3CA7C558199E17264408F78409BC5C7D04671BE5E9296738237FA5B0F65E` | `DES Algorithm Test 2026!` |
 ---
 
 ## Background: What is DES and How Does It Work?
@@ -121,28 +145,6 @@ Your program must:
 - Apply and remove padding correctly so plaintexts of any length (not just multiples of 8 bytes) are handled.
 - Include reasonable code comments explaining each step (key setup, padding, encryption, decryption, unpadding).
 - Code should run without errors and reproduce the exact sample output below.
-
-## Sample Input
-
-**Key (used for all 3 test cases):**
-- ASCII: `DESKEY12`
-- Hex: `4445534B45593132`
-
-| No. | Plaintext |
-|-----|-----------|
-| 1 | `HELLO123` |
-| 2 | `Computer Network Security` |
-| 3 | `DES Algorithm Test 2026!` |
-
-## Sample Output
-
-Your program's output should match the following exactly (mode = ECB, padding = PKCS7):
-
-| No. | Plaintext | Ciphertext (Hex) | Decrypted Text |
-|-----|-----------|-------------------|-----------------|
-| 1 | `HELLO123` | `A21A616C70AFAB9A6738237FA5B0F65E` | `HELLO123` |
-| 2 | `Computer Network Security` | `3A1C6C41ED0B0497890E7DFCA039FAFA1A288EA2E8A3248D78DC6B23174DC2BE` | `Computer Network Security` |
-| 3 | `DES Algorithm Test 2026!` | `F3BF3CA7C558199E17264408F78409BC5C7D04671BE5E9296738237FA5B0F65E` | `DES Algorithm Test 2026!` |
 
 **Notes:**
 - Test case 1 is exactly 8 bytes long, so PKCS7 padding adds one full extra block (16 bytes / 32 hex chars of ciphertext).
