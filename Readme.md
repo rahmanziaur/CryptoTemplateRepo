@@ -11,6 +11,9 @@ Here is a sample DES Page: https://rahmanziaur.github.io/Crypto2025Zia/crypto.ht
 Here is another popular site: https://www.cryptool.org/en/cto/
 
 ---
+
+Please note that Java Class Name: DESCipher.java
+
 ## Sample Input
 
 **Key (used for all 3 test cases):**
